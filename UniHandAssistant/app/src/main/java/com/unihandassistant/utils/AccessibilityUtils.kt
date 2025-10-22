@@ -10,7 +10,6 @@ object AccessibilityUtils {
     
     fun setupAccessibility(view: View, settings: Settings) {
         // Enable accessibility features
-        view.isAccessibilityFocused = true
         view.isFocusable = true
         view.isClickable = true
         
@@ -36,7 +35,6 @@ object AccessibilityUtils {
     
     fun setupAccessibilityForRadialMenu(view: View, settings: Settings) {
         // Setup accessibility for radial menu
-        view.isAccessibilityFocused = true
         view.isFocusable = true
         view.isClickable = true
         
@@ -50,7 +48,6 @@ object AccessibilityUtils {
     
     fun setupAccessibilityForSettings(view: View, settings: Settings) {
         // Setup accessibility for settings menu
-        view.isAccessibilityFocused = true
         view.isFocusable = true
         view.isClickable = true
         

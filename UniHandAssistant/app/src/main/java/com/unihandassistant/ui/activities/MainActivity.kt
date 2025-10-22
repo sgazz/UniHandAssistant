@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.unihandassistant.databinding.ActivityMainBinding
 import com.unihandassistant.ui.viewmodels.MainViewModel
+import com.unihandassistant.ui.widgets.RadialMenu
 
 class MainActivity : AppCompatActivity() {
     

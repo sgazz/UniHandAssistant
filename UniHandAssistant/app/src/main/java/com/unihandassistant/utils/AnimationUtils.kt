@@ -56,7 +56,7 @@ object AnimationUtils {
             animators.addAll(listOf(alphaAnimator, scaleXAnimator, scaleYAnimator))
         }
         
-        animatorSet.playTogether(animators)
+        animatorSet.playTogether(animators as Collection<android.animation.Animator>)
         animatorSet.addListener(object : android.animation.AnimatorListenerAdapter() {
             override fun onAnimationEnd(animation: android.animation.Animator) {
                 onComplete()

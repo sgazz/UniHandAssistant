@@ -32,8 +32,7 @@ object PerformanceOptimizer {
         view.setDrawingCacheEnabled(true)
         view.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH)
         
-        // Optimize animations
-        view.setAnimationCacheEnabled(true)
+        // Optimize animations - removed deprecated method
     }
     
     fun optimizeSensorPerformance(settings: Settings) {

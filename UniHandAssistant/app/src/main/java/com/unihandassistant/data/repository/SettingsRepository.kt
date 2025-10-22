@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import com.unihandassistant.data.models.Settings
 
-class SettingsRepository(private val context: Context) {
+class SettingsRepository(context: Context) {
     
     private val prefs: SharedPreferences = context.getSharedPreferences("unihand_settings", Context.MODE_PRIVATE)
     
