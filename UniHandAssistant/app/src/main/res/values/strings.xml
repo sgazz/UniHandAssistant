@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">UniHand Assistant</string>
+    <string name="gallery">Gallery</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_out">Zoom Out</string>
+    <string name="rotate_left">Rotate Left</string>
+    <string name="rotate_right">Rotate Right</string>
+    <string name="reset">Reset</string>
+    <string name="settings">Settings</string>
+    <string name="move">Move</string>
+    <string name="position_left">Left</string>
+    <string name="position_right">Right</string>
+    <string name="sensitivity_low">Low</string>
+    <string name="sensitivity_medium">Medium</string>
+    <string name="sensitivity_high">High</string>
+    <string name="speed_slow">Slow</string>
+    <string name="speed_normal">Normal</string>
+    <string name="speed_fast">Fast</string>
+    <string name="combination_standard">Standard</string>
+    <string name="combination_opposite">Opposite</string>
+</resources>
