@@ -4,6 +4,8 @@ import android.content.Context
 import android.view.View
 import android.view.ViewGroup
 import com.unihandassistant.data.models.Settings
+import kotlin.math.pow
+import kotlin.math.sqrt
 
 object SingleThumbOptimizer {
     
@@ -30,7 +32,7 @@ object SingleThumbOptimizer {
         // Calculate distance from thumb center
         val currentX = layoutParams.leftMargin.toFloat()
         val currentY = layoutParams.topMargin.toFloat()
-        val distance = kotlin.math.sqrt(
+        val distance = sqrt(
             (currentX - centerX).toDouble().pow(2) + (currentY - centerY).toDouble().pow(2)
         )
         

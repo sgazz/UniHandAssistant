@@ -52,8 +52,8 @@ dependencies {
     // Image processing
     implementation 'com.github.bumptech.glide:glide:4.16.0'
     
-    // Sensors
-    implementation 'androidx.sensors:sensors:1.0.0'
+    // Sensors - using standard Android sensor framework
+    // No additional dependency needed for sensors
     
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.mockito:mockito-core:5.5.0'

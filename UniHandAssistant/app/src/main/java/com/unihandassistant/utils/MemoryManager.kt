@@ -1,5 +1,6 @@
 package com.unihandassistant.utils
 
+import android.content.ComponentCallbacks2
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -81,13 +82,13 @@ object MemoryManager {
     
     fun onTrimMemory(level: Int) {
         when (level) {
-            Context.TRIM_MEMORY_RUNNING_MODERATE,
-            Context.TRIM_MEMORY_RUNNING_LOW,
-            Context.TRIM_MEMORY_RUNNING_CRITICAL -> {
+            ComponentCallbacks2.TRIM_MEMORY_RUNNING_MODERATE,
+            ComponentCallbacks2.TRIM_MEMORY_RUNNING_LOW,
+            ComponentCallbacks2.TRIM_MEMORY_RUNNING_CRITICAL -> {
                 // Clear some cache
                 imageCache?.trimToSize(imageCache?.maxSize() ?: 0 / 2)
             }
-            Context.TRIM_MEMORY_UI_HIDDEN -> {
+            ComponentCallbacks2.TRIM_MEMORY_UI_HIDDEN -> {
                 // Clear all cache
                 clearCache()
             }
